@@ -27,7 +27,7 @@ def cheese():
         print(count+1," ", cheese_list[count])
         count +=1
     cheese_selected=int(input("Which cheese did you want? Enter a number"))
-    return cheese
+    return cheese_list[cheese_selected-1]
 
         
 
@@ -37,6 +37,10 @@ def vegies():
     print("We have the following salads, you can have as many as you want")
     while count <len(salad_list):
         print(count+1," ", salad_list[count])
+        count +=1
+    salad_selected=int(input("Which Salad did you want? Enter a number"))
+    return salad_list[salad_selected-1]
+
 
 #main program
 print("welcome to Sam's Sandwhich Shop")
@@ -44,3 +48,7 @@ bread_choice=bread_selection()
 print(f"Your selected bread: {bread_choice}")
 meat_choice=meats()
 print(f"Your selected the meat: {meat_choice}")
+cheese_choice=cheese()
+print(f"Your selected the cheese: {cheese}")
+salad_choice=vegies()
+print(F"Your selected Salads are: {salad_choice}")
