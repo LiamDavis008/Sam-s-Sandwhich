@@ -32,10 +32,11 @@ def cheese():
         
 
 def vegies():
-    salad_list = ["None", "Açaí Palm Hearts", "Aguaje Fruit", "Amaranth Greens", "Arracacha", "Asparagus Pea", "Balsam Apple", "Boniato", "Bottle Gourd", "Broccoflower", "Cactus Pad", "Cardoon", "Cassava Leaves", "Celtuce", "Chayote", "Chrysanthemum Greens", "Cime di Rapa", "Daikon Radish", "Dinosaur Kale", "Ensete", "Fiddlehead Fern", "Galangal", "Gai Lan", "Goji Berry Leaves", "Gourd Luffa", "Horned Melon", "Huacatay", "Jicama", "Kaffir Lime Leaves", "Kohlrabi", "Lemon Grass", "Malabar Spinach", "Moringa", "Nopales", "Oca", "Oysterleaf", "Perilla", "Purslane", "Quinoa Greens", "Radicchio", "Ramps", "Romanesco Broccoli", "Salsify", "Samphire", "Shiso", "Taro Root", "Tepin Peppers", "Tomatillo", "Ube", "Water Chestnut", "Yacón"]
+    salad_list = ["None", "Açaí Palm Hearts", "Aguaje Fruit", "Amaranth Greens", "Arracacha"]
     count = 0
     print("We have the following salads, you can have as many as you want")
     while count <len(salad_list):
+        print(count+1," ", salad_list[count])
 
 #main program
 print("welcome to Sam's Sandwhich Shop")
