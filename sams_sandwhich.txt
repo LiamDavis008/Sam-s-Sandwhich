@@ -1,0 +1,27 @@
+
+ Date of Order:2025-10-10 09:26:27.782730
+ Brown bread
+ No meat Meat
+ Carefully Raw Milk Cheese Cheese
+ Carrot Lettuce Tomato salad
+ Smorgaskaviar sauce
+*** END OF ORDER: ***
+
+
+ Date of Order:2025-10-10 09:27:06.642054
+ Italian bread
+ No meat Meat
+ Carefully Raw Milk Cheese Cheese
+ Carrot Lettuce Tomato Tomato Carrot Cucumber salad
+ Smorgaskaviar sauce
+*** END OF ORDER: ***
+
+
+ Date of Order:2025-10-10 09:27:24.491444
+ White bread
+ kangaroo Meat
+ No cheese Cheese
+ Tomato Carrot Lettuce Tomato Carrot salad
+ Smorgaskaviar sauce
+*** END OF ORDER: ***
+

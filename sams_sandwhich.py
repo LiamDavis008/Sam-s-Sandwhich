@@ -1,7 +1,7 @@
 #library imports 
 import datetime
 #Sam's Sandwhich
-#function to force the user to input a valid name
+#function to force the user to input a valid name within a certain number boundary
 def force_name(message,lower,upper):#defines the function
     while True: # this is a infinate loop.
         name=str(input(message)).title() #asking for and storing the users name and adding a captial letter to the first character
@@ -10,7 +10,7 @@ def force_name(message,lower,upper):#defines the function
         else:
             print("Invalid name")
     return name #outputs a valid name back to the variable
-#function to force user to input a valid number
+#function to force user to input a valid number for menu selection
 def force_number(message,lower,upper):
     while True:
         try:
@@ -78,7 +78,7 @@ def print_list(list, item):
         count +=1 
     return
 
-#text file creats/opens a text file and prints sandwhich order
+#text file creats/opens a text file and prints sandwhich order to terminal 
 def textfile(name, cell, today, sandwhich_order):
     outF=open("sams_sandwhich.txt","a")
     print(f"\n***Order for {name} - {cell}***")
@@ -86,16 +86,18 @@ def textfile(name, cell, today, sandwhich_order):
     for item in sandwhich_order:
         print(item)
         outF.write(f"\n {item}")
-    print(f"*** END OF ORDER: ***")
+    print("*** END OF ORDER: ***")
+    outF.write("\n")
+    outF.write(("*** END OF ORDER: ***"))
     outF.write("\n")
     outF.write("\n")
     outF.close()
 
 def main():#main function 
-    print("welcome to Sam's Sandwhich Shop")#intro print
-    name=force_name("what is your name?",2,15)#forces the user to input a valid name 2,15 charaters in length
+    print("welcome to Sam's Sandwhich Shop")#Prints intro statement for sandwhich shop
+    name=force_name("what is your first name?",2,15)#forces the user to input a valid name 2,15 charaters in length
     cell=cell_num("what is your phone number",9,12)#forces a phone number 9 - 12 characters in length
-    #gets the user to choice there sandwhich options
+    #gets the user to choice there sandwhich options calls indavidual functions
     bread_choice=bread_selection()
     meat_choice=meats()
     cheese_choice=cheese()
@@ -110,7 +112,7 @@ def main():#main function
     sandwhich_order.append(f"{cheese_choice} Cheese")
     sandwhich_order.append(f"{salad_choice} salad")
     sandwhich_order.append(f"{sauce_choice} sauce")
-    textfile(name, cell, today, sandwhich_order)# calls the textfile funciton to print to a text file
+    textfile(name, cell, today, sandwhich_order)# calls the textfile funciton to print sandwhich order to text file
 
 #main program
 main()
